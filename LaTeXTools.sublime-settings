@@ -1,0 +1,133 @@
+// LaTeXTools Preferences
+//
+// Keep in the User directory. Personalize as needed
+
+{
+
+
+
+// ------------------------------------------------------------------
+// General settings
+// ------------------------------------------------------------------
+
+    "overwrite_goto_overlay": false,
+
+
+// ------------------------------------------------------------------
+// Preview settings
+// ------------------------------------------------------------------
+
+    "preview_math_mode": "none",
+
+    "preview_math_template_packages": [
+        "\\usepackage{amsmath}",
+        "\\usepackage{amssymb}",
+        "\\usepackage{mathtools}",
+        "\\IfFileExists{latexsym.sty}{\\usepackage{latexsym}}{}",
+        "\\IfFileExists{mathtools.sty}{\\usepackage{mathtools}}{}"
+    ],
+
+    "preview_math_template_preamble": [
+        "\\DeclareMathOperator{\\Var}{Var}",
+        "\\DeclareMathOperator{\\Cov}{Cov}",
+        "\\DeclareMathOperator{\\Corr}{Corr}",
+        "\\DeclareMathOperator*{\\argmax}{arg\\,max}",
+        "\\DeclareMathOperator*{\\argmin}{arg\\,min}",
+        "\\DeclareMathOperator*{\\tr}{tr}",
+        "\\DeclarePairedDelimiter{\\abs}{\\lvert}{\\rvert}",
+        "\\DeclarePairedDelimiter{\\norm}{\\lVert}{\\rVert}",
+        "\\newcommand*{\\expp}[1]{\\exp\\left(#1\\right)}",
+        "\\newcommand*{\\foralls}{\\ \\forall \\ }",
+        "\\newcommand*{\\st}{\\text{ s.t. }}",
+        "\\newcommand*{\\E}{\\mathbb E}",
+        "\\newcommand*{\\R}{\\mathbb R}",
+        "\\newcommand*{\\I}{\\mathds{1}}",
+        "\\newcommand*{\\Prob}{\\mathbb P}",
+        "\\newcommand*{\\convas}[1]{\\xrightarrow{#1}}",
+        "\\newcommand*{\\conv}{\\convas{}}",
+        "\\newcommand*{\\cond}{\\;\\ifnum\\currentgrouptype=16 \\middle\\fi|\\;}",
+        "\\newcommand{\\defeq}{\\vcentcolon=}",
+        "\\newcommand*{\\notorth}{\\ensuremath{\\perp\\!\\!\\!\\!\\!\\!\\diagup\\!\\!\\!\\!\\!\\!\\perp}}",
+        "\\newcommand*{\\orth}{\\ensuremath{\\perp\\!\\!\\!\\perp}}",
+        "\\newcommand*{\\evalat}{\\,\\big\\rvert}",
+        "\\newcommand*{\\dif}{\\,d}",
+        "\\newcommand*{\\difto}[1]{\\,d^#1}",
+        "\\newcommand*{\\difbot}[1]{\\frac{d}{d#1}}",
+        "\\newcommand*{\\partialbot}[1]{\\frac{\\partial}{\\partial#1}}",
+        "\\newcommand*{\\m}[1]{\\textbf{#1}}",
+        "\\newcommand*{\\bmath}[1]{\\boldsymbol{#1}}",
+        "\\newcommand{\\ubar}[1]{\\text{\\b{$#1$}}}",
+        "\\newcommand*{\\yestag}{\\addtocounter{equation}{1}\\tag{\\theequation}}",
+        "\\newcommand*{\\notaligned}[1]{\\noalign{$\\displaystyle #1$}}",
+        "\\newcommand*{\\ttilde}{{\\raise.17ex\\hbox{$\\scriptstyle\\sim$}}}",
+        "\\newcommand*{\\mt}[1]{\\text{\\normalfont #1}}"
+    ],
+
+
+// ------------------------------------------------------------------
+// Platform settings: adapt as needed for your machine
+// ------------------------------------------------------------------
+
+	"osx": 	{
+		// Path used when invoking tex & friends; MUST include $PATH
+		"texpath" : "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin"
+		// Path to PDF viewer, if needed
+		// TODO think about it. Also, maybe configure it here!
+	},
+
+
+
+// ------------------------------------------------------------------
+// Build panel and phantoms settings
+// ------------------------------------------------------------------
+
+    // OPTION: "hide_build_panel"
+    // level to hide the build panel after the build is finished
+    // Possible values are:
+    // "always" (hide the panel even if the build failed),
+    // "no_errors" (only hide the panel if the build was successful even with warnings),
+    // "no_warnings" (only hide the panel if no warnings occur)
+    // "no_badboxes" (only hide the panel if no badbox messages occur when badboxes are enabled) and
+    // "never" (default, never hide the build panel)
+    "hide_build_panel": "no_errors",
+
+
+
+// ------------------------------------------------------------------
+// Formatting of bibliographic references in quick panel
+// ------------------------------------------------------------------
+
+	/* This preference sets the format of the quick panel to select citations using wildcards.
+	The setting is a list with one or two string using wildcards for author, title, keyword etc.
+
+	Default setting: the traditional display, `["{title} ({keyword})","{author}"]`
+	Format:
+	Can quantum-mechanical description of physical reality be considered complete? This is an non-existing subtitle to illustrate (einstein1935quantum)
+	Albert Einstein and B Podolsky and N Rosen
+
+	Richer alternative: ["{author_short} {year} - {title_short} ({keyword})","{title}"]
+	Format:
+	Einstein et al. 1935 - Can quantum-mechanical description of physical reality be considered complete (einstein1935quantum)
+	Can quantum-mechanical description of physical reality be considered complete? This is an non-existing subtitle to illustrate
+
+	Another alternative: ["({keyword}) {author_short} - {year}","{title} - {journal}"]
+	Format:
+	(einstein1935quantum) Einstein et al. - 1935
+	Can quantum-mechanical description of physical reality be considered complete? - Physical Review
+
+	No-title alternative: ["{author_short} {year} ({keyword})"]
+	Format:
+	Einstein et al. 1935 (einstein1935quantum)
+
+	Valid wildcards: keyword, title, author, year, author_short, title_short, journal
+	*/
+
+	// Uncomment or modify at will
+	"cite_panel_format": ["{author_short} {year} - ({keyword}) {title_short}","{title} - {journal}"],
+	//"cite_panel_format": ["({keyword}) {author_short} - {year}","{title} - {journal}"],
+	//"cite_panel_format": ["{author_short} {year} ({keyword})"],
+
+	// Similarly, the formatting for the autocomplete panel:
+	"cite_autocomplete_format": "{keyword}: {title}"
+
+}

@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"Boxy Theme",
+		"Boxy Theme Addon - Font Face",
+		"Boxy Theme Addon - Widget Font Size",
+		"BracketHighlighter",
+		"FileDiffs",
+		"LaTeX Word Count",
+		"LaTeXTools",
+		"MarkdownEditing",
+		"Modific",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"R-Box",
+		"scrollbuffer",
+		"SendCode",
+		"SFTP",
+		"SideBarEnhancements",
+		"sublime_stata2",
+		"SublimeGit",
+		"Terminal"
+	],
+	"repositories":
+	[
+		"https://github.com/rogerfan/sublime_stata2",
+		"https://github.com/rogerfan/scrollbuffer"
+	]
+}

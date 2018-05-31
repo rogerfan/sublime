@@ -1,0 +1,64 @@
+[
+
+    { "keys": ["ctrl+l", "ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["f11"], "command": "clone_file" },
+
+//PythonIDE key bindings
+    { "keys": ["ctrl+l", "ctrl+d"], "command": "python_goto_definition", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+
+    { "keys": ["ctrl+l", "ctrl+b"], "command": "python_get_back", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+
+    { "keys": ["ctrl+l", "ctrl+h"], "command": "python_get_documentation", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+
+// SublimeREPL key bindings
+     { "keys": ["ctrl+l", "ctrl+t"], "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_python",
+            "file": "config/Python/Main.sublime-menu"
+        }, "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+
+    { "keys": ["ctrl+l", "ctrl+r"], "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_python_run",
+            "file": "config/Python/Main.sublime-menu"
+        }, "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" }
+        ]
+    },
+
+     { "keys": ["ctrl+l", "ctrl+t"], "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_r",
+            "file": "config/R/Main.sublime-menu"
+        }, "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.r" }
+        ]
+    },
+
+// AlignTab
+    {
+        "keys": ["ctrl+shift+a"], "command": "align_tab",
+        "args" : {"user_input" : "=/f"}
+    },
+    {
+        "keys": ["ctrl+alt+a"], "command": "align_tab"
+    }
+]

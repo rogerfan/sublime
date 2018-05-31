@@ -1,0 +1,12 @@
+{
+    "anaconda_linter_delay": 1.0,
+    "anaconda_gutter_theme": "retina",
+    "anaconda_linter_mark_style": "none",
+    "anaconda_linter_underlines": false,
+    "merge_signatures_and_doc": false,
+    "enable_docstrings_tooltip": false,
+    "pep8_ignore":
+    [
+        "W391", "W292", "E231", "E201", "E731", "E226"
+    ],
+}

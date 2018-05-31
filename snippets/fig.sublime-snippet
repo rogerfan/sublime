@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[\begin{figure}[htb] \centering
+\includegraphics[width=\linewidth]{${1:file}.pdf}
+\caption{}
+\label{fig:${2}}
+\end{figure}]]></content>
+    <tabTrigger>fig</tabTrigger>
+    <scope>text.tex.latex</scope>
+    <description>Figure Env</description>
+</snippet>

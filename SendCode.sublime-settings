@@ -1,0 +1,11 @@
+{
+	"python":
+	{
+		"bracketed_paste_mode": true,
+		"prog": "iterm"
+	},
+	"r":
+	{
+		"prog": "R"
+	}
+}

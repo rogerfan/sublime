@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[\begin{table}[htb] \centering \small
+\caption{${2}}
+\input{${1:file}.tex}
+\label{tab:${3}}
+\end{table}]]></content>
+    <tabTrigger>tabins</tabTrigger>
+    <scope>text.tex.latex</scope>
+    <description>Table Env, insert tabular file</description>
+</snippet>
+
+

@@ -1,0 +1,28 @@
+[
+
+    { "keys": ["super+l", "super+l"], "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["f11"], "command": "clone_file" },
+    { "keys": ["super+shift+s"], "command": "save_all" },
+    { "keys": ["super+t"], "command": "goto_definition" },
+
+    { "keys": ["super+m", "super+,"], "command": "next_bookmark" },
+    { "keys": ["super+m", "super+n"], "command": "prev_bookmark" },
+    { "keys": ["super+m", "super+m"], "command": "toggle_bookmark" },
+    { "keys": ["super+m", "super+k"], "command": "clear_bookmarks" },
+
+    {"keys": ["super+\\"], "command": "send_code",
+     "args": {"cmd": "setwd(\"$file_path\")"},
+     "context": [{"key": "selector", "operator": "equal", "operand": "source.r"}]},
+    {"keys": ["super+\\"], "command": "send_code",
+     "args": {"cmd": "%cd \"$file_path\""},
+     "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+    {"keys": ["shift+super+\\"], "command": "send_code",
+     "args": {"cmd": "cd \"$file_path\"", "prog":"iterm"}},
+
+    { "keys": ["ctrl+super+d"], "command": "show_diff" },
+
+    // { "keys": ["ctrl+alt+space"], "command": "open_terminal" },
+    { "keys": ["super+shift+t"], "command": "reopen_last_file" }  // Override Terminal
+
+
+]
