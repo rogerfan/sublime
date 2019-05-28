@@ -7,9 +7,6 @@
 	[
 		"A File Icon",
 		"Anaconda",
-		"Boxy Theme",
-		"Boxy Theme Addon - Font Face",
-		"Boxy Theme Addon - Widget Font Size",
 		"BracketHighlighter",
 		"FileDiffs",
 		"LaTeX Word Count",
@@ -23,7 +20,8 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"sublime_stata2",
-		"Terminal"
+		"Terminal",
+		"Theme - Gravity"
 	],
 	"repositories":
 	[
