@@ -20,11 +20,20 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"sublime_stata2",
-		"Terminal"
+		"Terminal",
+        "Boxy Theme",
+        "Boxy Theme Addon - Font Face",
+        "Boxy Theme Addon - Widget Font Size"
 	],
 	"repositories":
 	[
 		"https://github.com/rogerfan/sublime_stata2",
 		"https://github.com/rogerfan/scrollbuffer"
-	]
+	],
+    "auto_upgrade_ignore":
+    [
+        "Boxy Theme",
+        "Boxy Theme Addon - Font Face",
+        "Boxy Theme Addon - Widget Font Size"
+    ]
 }
