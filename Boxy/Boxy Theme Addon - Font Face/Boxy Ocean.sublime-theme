@@ -1,0 +1,63 @@
+// > BOXY OCEAN
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The most hackable theme for Sublime Text 3
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[
+  //
+  // >> Controls
+  // ===========================================================================
+
+  {
+    "class": "label_control",
+    "font.face" : "Source Code Pro"
+  },
+
+  {
+    "class": "label_control",
+    "parents": [{"class": "panel_control"}],
+    "font.face" : "Source Code Pro"
+  },
+
+  //
+  // >> Sidebar
+  // ===========================================================================
+
+  {
+    "class": "sidebar_heading",
+    "font.face": "Source Code Pro"
+  },
+
+  {
+    "class": "sidebar_label",
+    "font.face": "Source Code Pro"
+  },
+
+  //
+  // >> Status Bar
+  // ===========================================================================
+
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "font.face": "Source Code Pro"
+  },
+
+  //
+  // >> Tabs
+  // ===========================================================================
+
+  {
+    "class": "tab_label",
+    "font.face" : "Source Code Pro"
+  },
+
+  //
+  // >> Tooltips
+  // ===========================================================================
+
+  {
+    "class": "tool_tip_label_control",
+    "font.face": "Source Code Pro"
+  }
+]
